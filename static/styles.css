@@ -1,0 +1,32 @@
+body {
+    -moz-box-shadow:    inset 0 0 300px #9EACB0;
+    -webkit-box-shadow: inset 0 0 300px #9EACB0;
+    box-shadow:         inset 0 0 300px #9EACB0;
+    padding-bottom: 120px;
+    background-image: url('/static/debut_light.png');
+}
+
+.logo {
+    padding-bottom:10px;
+}
+
+.instructions {
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    border: 2px dotted #666;
+    border-radius: 20px;
+}
+
+input {
+    background-color: #f1e5b7 !important;
+    border: 0 !important
+}
+
+#lastname {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #e7b85c;
+    border: 0;
+}

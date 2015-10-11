@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+
+                    <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-xs-6 col-xs-offset-3 text-center">
+                        <img src="/static/logo.png" class="logo img-responsive">
+                    </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="instructions">
+                        <h1>Application</h1>
+                        Please fill out the following form to apply!
+                        </div>
+                    </div>
+
+                    <form action="/congratulations" method="POST">
+                
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="salary">Minimum Salary</label>
+                            <input type="text" class="form-control" id="salary" name="salary" placeholder="$00,000">
+                        </div>
+                        <div class="form-group col-xs-12"><b>Applying for:</b>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="jobtype" value="se"> Software Engineer
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="jobtype" value="qa"> QA Engineer
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="jobtype" value="pm"> Product Manager
+                            </label>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary btn-lg">Apply Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
